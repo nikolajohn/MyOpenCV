@@ -8,21 +8,103 @@
     android:orientation="vertical"
     >
 
-    <Button
-        android:id="@+id/select_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="选择图片" />
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="right"
+            android:textSize="30dp"
+            android:text="H:"
+            android:layout_weight="0.8">
+        </TextView>
 
-    <Button
-        android:id="@+id/process_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="处理" />
+        <TextView
+            android:id="@+id/H"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:text="0"
+            android:layout_weight="1">
+        </TextView>
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="right"
+            android:textSize="30dp"
+            android:text="S:"
+            android:layout_weight="0.8">
+        </TextView>
+
+        <TextView android:layout_height="wrap_content"
+            android:id="@+id/S"
+            android:layout_width="wrap_content"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:text="0"
+            android:layout_weight="1">
+        </TextView>
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="30dp"
+            android:gravity="right"
+            android:text="I:"
+            android:layout_weight="0.8">
+        </TextView>
+
+        <TextView android:layout_height="wrap_content"
+            android:id="@+id/L"
+            android:layout_width="wrap_content"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:text="0"
+            android:layout_weight="1">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/select_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择图片"
+            android:layout_weight="1"
+            android:textColor="#ffffff" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/process_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HSL处理"
+            android:layout_weight="1"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="520dp" />
 
 </LinearLayout>
